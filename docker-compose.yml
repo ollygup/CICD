@@ -1,0 +1,22 @@
+services:
+  resume-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 5173:5173
+    volumes:
+      - .:/app
+      - /app/node_modules
+    stdin_open: true # -i
+    tty: true # -t
+
+# ==== READ ====
+
+# COMMAND TO RUN:  docker compose up 
+
+# dont need -d flag so the docker container's terminal is displayed in this terminal (rather than freeing up your terminal)
+
+# as for changes made directly in the code base and require vite to rebuild
+# requires to use "polling" from vite which triggers vite to poll at intervals for changes
+# as the native file watch will not be available since vite is running within the container
