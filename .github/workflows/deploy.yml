@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or "master", depending on your setup
+      - main  # only run pipeline if pushed to main
 
 permissions:
   contents: write # Grants permission to create or update deployment branches like gh-pages

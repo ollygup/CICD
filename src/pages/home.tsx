@@ -13,27 +13,33 @@ function Home() {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>8 AM</TimelineContent>
+        <TimelineContent>Create a repo</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>12 PM</TimelineContent>
+        <TimelineContent>Publish a repo</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot />
-          <TimelineConnector  sx={{ minHeight: '1000px' }} />
+          <TimelineConnector  sx={{ minHeight: '100px' }} />
         </TimelineSeparator>
-        <TimelineContent>6 PM</TimelineContent>
+        <TimelineContent>Add a dockerfile and docker-compose file for local development use</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot />
         </TimelineSeparator>
-        <TimelineContent>11 PM</TimelineContent>
+        <TimelineContent>Add a CICD pipeline file</TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+        </TimelineSeparator>
+        <TimelineContent>🎉 Docker + CICD achieved 🎉 </TimelineContent>
       </TimelineItem>
     </Timeline>
   );
