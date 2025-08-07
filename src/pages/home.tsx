@@ -4,6 +4,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import Typography from '@mui/material/Typography';
 
 function Home() {
   return (
@@ -18,22 +19,52 @@ function Home() {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot />
-          <TimelineConnector />
+          <TimelineConnector sx={{ minHeight: '90px' }}/>
         </TimelineSeparator>
         <TimelineContent>Publish a repo</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot />
-          <TimelineConnector  sx={{ minHeight: '100px' }} />
+          <TimelineConnector  sx={{ minHeight: '50px' }} />
         </TimelineSeparator>
-        <TimelineContent>Add a dockerfile and docker-compose file for local development use</TimelineContent>
+        <TimelineContent>
+          <Typography>
+            Add a <span style={{ color: '#92e681ff' }}>dockerfile</span>
+          </Typography>
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot />
+          <TimelineConnector  sx={{ minHeight: '50px' }} />
         </TimelineSeparator>
-        <TimelineContent>Add a CICD pipeline file</TimelineContent>
+        <TimelineContent>
+          <Typography>
+            Add a <span style={{ color: '#92e681ff' }}>docker-compose</span> file
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector  sx={{ minHeight: '120px' }} />
+        </TimelineSeparator>
+        <TimelineContent>
+          🎉 Local Development Setup Completed 🎉
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector  sx={{ minHeight: '50px' }} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography>
+            Add a <span style={{ color: '#81cbe6ff' }}>CICD pipeline</span> file
+          </Typography>
+          
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
