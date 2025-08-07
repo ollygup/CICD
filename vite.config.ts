@@ -9,4 +9,5 @@ export default defineConfig({
       usePolling: true, // needed for docker container to pick up changes (when saving and update the build immediately)
     },
   },
+  base: "./", 
 })

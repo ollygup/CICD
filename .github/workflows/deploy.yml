@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Announce Event
-        run: echo "🎉 Workflow triggered by: ${{ github.event_name }} (branch: ${{ github.ref }})"
+        run: echo '🎉 Workflow triggered by: ${{ github.event_name }} (branch: ${{ github.ref }})'
 
       - name: Fetch Repository Content
         run: echo "Cloning repository…"
