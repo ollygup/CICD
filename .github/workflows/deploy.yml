@@ -11,13 +11,10 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Announce Event
-        run: echo '🎉 Workflow triggered by: ${{ github.event_name }} (branch: ${{ github.ref }})'
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
-      - name: Fetch Repository Content
-        run: echo "Cloning repository…"
+      - run: echo "Cloning repository…"
 
       - name: Checkout code
         uses: actions/checkout@v4
